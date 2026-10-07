@@ -13,9 +13,10 @@
 </head>
 <body>
   <h1>CBIT Customer Toolkit</h1>
-  <p>Public scripts-only technician toolkit, currently at v0.3.4-rc2.</p>
-  <p>Run in a PowerShell window on a customer workstation:</p>
+  <p>Public scripts-only technician toolkit, currently at v0.3.4-rc8.</p>
+  <p>Run in a PowerShell window on a customer computer (run elevated on the DC/package host for GPO deployment):</p>
   <code>irm https://cbit-msp.github.io/cbit.txt | iex</code>
-  <p>The short command checks the downloaded loader and toolkit package against fixed SHA-256 hashes. See the <a href="https://github.com/CBIT-MSP/cbit-customer-toolkit/releases/tag/v0.3.4-rc2">release page</a> for asset hashes. For an independent first-stage check, use the hash-pinned verification command distributed through your trusted technician channel.</p>
+  <p>SentinelOne deployment asks for the CBIT deployment unlock passphrase. Obtain it from your approved technician vault.</p>
+  <p>The short command checks the downloaded loader and toolkit package against fixed SHA-256 hashes. See the <a href="https://github.com/CBIT-MSP/cbit-customer-toolkit/releases/tag/v0.3.4-rc8">release page</a> for asset hashes. For an independent first-stage check, use the hash-pinned verification command distributed through your trusted technician channel.</p>
 </body>
 </html>
