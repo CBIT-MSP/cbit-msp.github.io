@@ -1,16 +1,16 @@
-#Requires -Version 5.1
+﻿#Requires -Version 5.1
 <#
-Short GitHub Pages entry point for the public scripts-only v0.3.4-rc8 release.
+Short GitHub Pages entry point for the public scripts-only v0.3.4-rc10 release.
 Fetching this script with `irm ... | iex` executes the served script before an
-independent hash check. Use Remote-Test-Verify-org-rc8.md for a hash-pinned first test.
+independent hash check. Use Remote-Test-Verify-org-rc10.md for a hash-pinned first test.
 The loader and package downloaded by this script are SHA256 checked.
 #>
 param([switch]$Verify)
 $ErrorActionPreference = 'Stop'
-$loaderUri = 'https://github.com/CBIT-MSP/cbit-customer-toolkit/releases/download/v0.3.4-rc8/Get-CbitToolkit.ps1'
+$loaderUri = 'https://github.com/CBIT-MSP/cbit-customer-toolkit/releases/download/v0.3.4-rc10/Get-CbitToolkit.ps1'
 $loaderSha256 = 'C57ADD8C40E0B3EDE06B5EA3C540A2D57081FCAE336675EB9EC28430B733C748'
-$packageUri = 'https://github.com/CBIT-MSP/cbit-customer-toolkit/releases/download/v0.3.4-rc8/CBIT-CustomerToolkit-0.3.4.zip'
-$packageSha256 = '4D2906C0E87CD9607B45A3752133698B33C0924122E23DA076ABB0358EDF8413'
+$packageUri = 'https://github.com/CBIT-MSP/cbit-customer-toolkit/releases/download/v0.3.4-rc10/CBIT-CustomerToolkit-0.3.4.zip'
+$packageSha256 = 'AA2C3FA4670FEC68A64DB8C12FCE4DFE8F4BF428BC3E1446BE361ADD513D6CBE'
 $packageFolder = 'CBIT-CustomerToolkit-0.3.4'
 $loaderPath = Join-Path ([IO.Path]::GetTempPath()) ('CBIT-loader-' + [guid]::NewGuid().ToString('N') + '.ps1')
 try {
